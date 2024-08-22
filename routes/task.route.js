@@ -6,7 +6,7 @@ const { auth } = require("../middleware/auth.middleware")
 
 
 const taskRouter=express.Router()
-taskRouter.use(auth)
+
 
 taskRouter.post("/add",auth,async(req,res)=>{
     const payload=req.body
